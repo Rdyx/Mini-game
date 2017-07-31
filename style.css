@@ -41,6 +41,7 @@ body{
 .button{
 	border-radius: 5px;
 	background-color: grey;
+	color: white;
 	border: none;
 	margin: 0;
 }
@@ -84,4 +85,21 @@ body{
 	display: none;
 }
 
-.mage{}
+.select{
+	border-radius: 5px;
+	background-color: grey;
+	color: white;
+	border: none;
+	margin: 0;
+	padding: 2px 0px 2px 0px;
+}
+
+.select #war{
+	background-color: red;
+}
+.select #voleur{
+	background-color: green;
+}
+.select #mage{
+	background-color: blue;
+}

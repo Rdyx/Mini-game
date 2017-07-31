@@ -1,11 +1,31 @@
-var classe = "guerrier";
+var classe = "";
+
+var guerrier = {
+	str : 10,
+	sta : 10,
+	dex : 5,
+	int : 2,
+};
+
+var voleur = {
+	str : 5,
+	sta : 5,
+	dex : 10,
+	int : 4,
+};
+
+var mage = {
+	str : 2,
+	sta : 4,
+	dex : 4,
+	int : 10,
+};
+
 var html = "";
-$("#buttonWar").click(function classe(classe){
-	var classe = "war";
-	var str = 10;
-	var sta = 10;
-	var dex = 5;
-	var int = 2;
+
+	$("#buttonWar").click(function classe(classe){
+	classe = guerrier;
+	console.log(classe);
 	$(".bigContent").html("<h1 class='buttonWar'>Guerrier</h1>\
 							<p>Le guerrier est une classe de... ben guerrier (-_-')</p>\
 							<p>Ses <strong>stats</strong> sont : </p>\
@@ -15,15 +35,11 @@ $("#buttonWar").click(function classe(classe){
 								<strong>Int</strong> : 2 points (T'as cru qu'un war c'était intelligent p'tête ?)</p>\
 								<p>Bonus guerrier : <strong>+1 dégâts</strong> et <strong>+1 hp</strong>/Str, <strong>+2hp</strong>/Sta.</p>");
 	$("div.hideSelect").removeClass("hideSelect");
-
 });
 
 $("#buttonRogue").click(function classe(classe){
-	var classe = "voleur";
-	var str = 10;
-	var sta = 6;
-	var dex = 5;
-	var int = 2;
+	classe = voleur;
+	console.log(classe);
 	$(".bigContent").html("<h1 class='buttonRogue'>Voleur</h1>\
 							<p>Le voleur est une classe de... filou ! (^_^)</p>\
 							<p>Ses <strong>stats</strong> sont : </p>\
@@ -33,18 +49,13 @@ $("#buttonRogue").click(function classe(classe){
 								<strong>Int</strong> : 4 points (Un peu plus intelligent qu'un war, mais moins qu'un mage quoi...)</p>\
 								<p>Bonus voleur : <strong>+2 dégâts</strong> et <strong>+1 hp</strong>/Dex.</p>");
 	$("div.hideSelect").removeClass("hideSelect");
-	return 
 });
 
 $("#buttonMage").click(function classe(classe){
-	var classe = "mage";
-	var str = 2;
-	var sta = 4;
-	var dex = 4;
-	var int = 10;
-
+	classe = mage;
+	console.log(classe);
 	$(".bigContent").html("<h1 class='buttonMage'>Mage</h1>\
-							<p>Le mage, c'est genre l'intello fragile de la classe, tu vois ? (@.@) (</p>\
+							<p>Le mage, c'est genre l'intello fragile de la classe, tu vois ? (@.@)</p>\
 							<p>Ses <strong>stats</strong> sont : </p>\
 								<p><strong>Str</strong> : 2 points<br>\
 								<strong>Sta</strong> : 3 points (J'ai bien dit \"Intello <strong>FRAGILE</strong>\")<br>\
@@ -53,8 +64,19 @@ $("#buttonMage").click(function classe(classe){
 								<p>Bonus mage : <strong>+3 dégâts</strong> et <strong>+1 hp</strong>/Int.</p>");
 	$("div.hideSelect").removeClass("hideSelect");
 });
-
-
+// $("#confirm").click(function validation(){
+// 	console.log(classe);
+// 	if(classe = guerrier){
+// 		console.log(classe);
+// 		alert("YOU ARE A WARRIOR");
+// 	} else if(classe = voleur){
+// 		console.log(classe);
+// 		alert("YOU ARE A ROGUE");
+// 	} else {
+// 		console.log(classe);
+// 		alert("YOU ARE A MAGE");
+// 	}
+// })
 
 /*function classe(classe){
 	if(classe == "guerrier"){
